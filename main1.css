@@ -1,0 +1,70 @@
+html, body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 400;
+    line-height: 20px;
+    font-size: 1rem;
+    color: tomato;
+    margin: 0;
+}
+
+.navbar{
+    display: flex;
+    padding: 10px;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+
+.brand, .nav-link{
+    text-transform: uppercase;
+    color: gray;
+    
+}
+
+.brand{
+    font-size: 25px;
+}
+
+.codes{
+    color: tomato;
+}
+.topnav{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    list-style: none;
+}
+
+.dropdownLink{
+    display: none;
+}
+
+@media(max-width: 768px) {
+    ul.topnav li a.nav-link{
+        display: none;
+    }
+
+    ul.topnav li.dropdownList{
+        display: block;
+        position: absolute;
+        top: 15px;
+        right: 20px;
+    }
+
+    ul.topnav.responsive li a.nav-link{
+        display: block;
+    }
+
+    ul.topnav.responsive li.dropdownLink {
+        position: absolute;
+        top: 15px;
+        right: 20px;
+    }
+}
+
+.nav-link{
+    text-decoration: none;
+    padding-left: 20px;
+    font-size: 20px;
+}
