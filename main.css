@@ -1,0 +1,39 @@
+body{
+    background: #512451;
+    color: white;
+}
+
+@media(min-width:600px){
+    .parent{
+        display: flex;
+        padding: 20px;
+    }
+    
+    .parent-1{
+        display: flex;
+        justify-content: center;
+        justify-content: space-around;
+    }
+}
+
+
+.parent div, .parent-1 div{
+    border: 1px solid #cccccc;
+    padding: 10px;
+}
+
+.item1{
+    flex: 0;
+}
+
+.item2{
+    flex: 2;
+}
+
+.item3{
+    flex: 0;
+}
+
+.item4{
+
+}
